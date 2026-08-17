@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17251e">
+  <title>LibreForme — Bouger gratuitement</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil" aria-label="LibreForme, accueil"><span class="brand-mark">LF</span><span>LibreForme</span></a>
+    <button class="icon-btn" id="resetBtn" aria-label="Réinitialiser la progression" title="Réinitialiser">↻</button>
+  </header>
+
+  <main>
+    <section class="view active" id="accueil">
+      <div class="hero">
+        <p class="eyebrow">100 % gratuit · sans compte</p>
+        <h1>Bouge à ton rythme.<br><em>Pas à celui d’un abonnement.</em></h1>
+        <p class="intro">Des séances courtes, progressives et sans matériel pour retrouver la forme durablement.</p>
+        <div class="hero-actions">
+          <button class="primary" data-go="programme">Commencer mon programme <span>→</span></button>
+          <button class="text-btn" data-start="express">Séance express 7 min</button>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div><div class="figure"><i></i><b></b><span></span></div>
+          <div class="hill hill-a"></div><div class="hill hill-b"></div>
+        </div>
+      </div>
+
+      <section class="stats" aria-label="Progression">
+        <div><strong id="doneCount">0</strong><span>séances</span></div>
+        <div><strong id="minutesCount">0</strong><span>minutes</span></div>
+        <div><strong id="streakCount">0</strong><span>jours de série</span></div>
+      </section>
+
+      <section class="today section-pad">
+        <div class="section-title"><div><p class="eyebrow">AUJOURD’HUI</p><h2>Ta prochaine séance</h2></div><span class="badge" id="weekBadge">Semaine 1</span></div>
+        <article class="workout-card">
+          <div class="card-index">01</div>
+          <div class="card-copy"><p id="nextMeta">12 MIN · DOUX</p><h3 id="nextTitle">Réveil du corps</h3><p id="nextDesc">On remet le corps en mouvement, tranquillement.</p></div>
+          <button class="round-btn" id="startNext" aria-label="Démarrer">▶</button>
+        </article>
+      </section>
+    </section>
+
+    <section class="view section-pad" id="programme">
+      <div class="page-head"><button class="back" data-go="accueil">←</button><div><p class="eyebrow">TON PARCOURS</p><h1>4 semaines pour démarrer</h1></div></div>
+      <div class="preferences">
+        <label><span>Niveau</span><select id="levelSelect"><option value="debutant">Débutant</option><option value="intermediaire">Intermédiaire</option></select></label>
+        <label class="switch-line"><span>Sans sauts</span><input type="checkbox" id="lowImpact"><i></i></label>
+      </div>
+      <p class="program-note">3 séances par semaine. Les jours de repos comptent aussi : c’est là que ton corps récupère.</p>
+      <div id="weekList" class="week-list"></div>
+    </section>
+
+    <section class="view session-view" id="seance">
+      <div class="session-top"><button class="close" id="closeSession">×</button><span id="sessionStep">Exercice 1 / 5</span><button class="sound" id="soundBtn" aria-label="Activer ou désactiver le son">♪</button></div>
+      <div class="progress-track"><i id="sessionProgress"></i></div>
+      <div class="exercise-stage">
+        <p class="eyebrow" id="phaseLabel">À FAIRE</p>
+        <h1 id="exerciseName">Marche sur place</h1>
+        <div class="exercise-visual"><div class="pulse-ring"></div><span id="exerciseEmoji">🚶</span></div>
+        <div class="timer" id="timer">00:30</div>
+        <p class="instruction" id="instruction">Tiens-toi droit et monte doucement les genoux.</p>
+      </div>
+      <div class="session-controls">
+        <button class="secondary" id="prevExercise">←</button>
+        <button class="primary pause" id="pauseBtn">Pause</button>
+        <button class="secondary" id="nextExercise">→</button>
+      </div>
+    </section>
+
+    <section class="view completion" id="bravo">
+      <div class="confetti" aria-hidden="true">✦ · ✧ · ✦</div>
+      <p class="eyebrow">SÉANCE TERMINÉE</p><h1>Bien joué !</h1>
+      <p>Tu viens de faire quelque chose de bon pour toi. La régularité gagne toujours sur la perfection.</p>
+      <div class="finish-stat"><strong id="finishMinutes">12</strong><span>minutes actives</span></div>
+      <button class="primary" data-go="accueil">Voir ma progression</button>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigation principale">
+    <button class="nav-active" data-go="accueil"><span>⌂</span>Accueil</button>
+    <button data-go="programme"><span>◫</span>Programme</button>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>
+
