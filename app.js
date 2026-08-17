@@ -1,3 +1,4 @@
+if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js?v=3').catch(()=>{});
 const db=supabase.createClient('https://etchkccnckeuzsifvgld.supabase.co','sb_publishable_XXJU11HBVpyROr4150rgwg_gEGQjlf1'),$=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);let me,team,items=[],mode='all',signup=false,editId=null;
 const T={walk:['Marche rapide','🚶'],pushup:['Pompes','💪'],abs:['Abdos','⚡'],dumbbell_left:['Haltère · bras gauche','🏋️'],dumbbell_right:['Haltère · bras droit','🏋️'],other:['Autre exercice','✨']};
 $('#toggle').onclick=()=>{signup=!signup;$('#authTitle').textContent=signup?'Créer mon compte':'Se connecter';$('#nameBox').hidden=!signup;$('#submit').textContent=signup?'Créer mon compte':'Se connecter';$('#toggle').textContent=signup?'Déjà inscrit ? Se connecter':'Pas encore de compte ? S’inscrire'};
