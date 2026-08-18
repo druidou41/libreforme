@@ -1,0 +1,21 @@
+/* LibreForme v12 — page principale plus douce et boutique */
+:root{--radius-xl:28px;--radius-lg:20px;--radius-md:14px}
+header{margin:12px max(12px,2vw) 0;border:1px solid var(--line);border-radius:18px;height:64px}
+.hero{margin:18px max(12px,2vw) 0;border:1px solid #39446b;border-radius:var(--radius-xl);overflow:hidden}
+.code,.filters button,.period button,.stat-tabs button,.shop-filters button{border-radius:999px}
+.ring{border-radius:50%}
+.title .primary{border-radius:15px;clip-path:none}
+.entry{border-radius:var(--radius-lg);padding:18px;margin:11px 0;background:linear-gradient(135deg,#10182bde,#0b1120e8);box-shadow:0 9px 25px #0003}
+.icon{border-radius:14px;clip-path:none}
+.progress,.choice article{border-radius:var(--radius-xl);overflow:hidden}
+.stat-cards>div{border-radius:var(--radius-lg)}
+.stat-tabs{gap:9px}
+.game-chart{padding:0 12px;border-radius:var(--radius-md);background:#08101e80}
+.credit-pill{display:flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--lime);border-radius:999px;color:var(--lime);font:800 12px ui-monospace;box-shadow:0 0 14px #c8ff3d22}
+#profileBadge{font-size:18px}#profileTitle{color:var(--purple);letter-spacing:.5px}
+.shop{margin-top:48px}.shop-head{display:flex;align-items:center;justify-content:space-between;gap:20px}.shop-head p{color:var(--muted);margin:0}.wallet{min-width:110px;padding:13px 18px;text-align:center;background:#09101f;border:1px solid var(--lime);border-radius:18px}.wallet span{display:block;font:800 8px ui-monospace;color:var(--muted)}.wallet b{display:block;color:var(--lime);font:900 22px ui-monospace;margin-top:4px}.wallet i{font-style:normal}.shop-filters{display:flex;gap:8px;margin:25px 0;overflow-x:auto}.shop-filters button{padding:9px 15px;border:1px solid var(--line);background:#09101f;color:var(--muted);font:800 10px ui-monospace;text-transform:uppercase}.shop-filters button.on{border-color:var(--cyan);color:var(--cyan)}.shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.reward-card{position:relative;padding:20px;background:linear-gradient(145deg,#111a31,#090f1e);border:1px solid var(--line);border-radius:20px}.reward-card.equipped{border-color:var(--lime);box-shadow:0 0 22px #c8ff3d1f}.reward-icon{font-size:30px;margin-bottom:13px}.reward-card h3{margin:5px 0;font-size:16px}.reward-card p{min-height:36px;color:var(--muted);font-size:11px}.reward-card>div:last-child{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:18px}.reward-card>div>b{color:var(--lime);font:900 13px ui-monospace}.reward-card button{padding:8px 11px;border:1px solid var(--purple);border-radius:10px;background:#17102a;color:white;font:800 9px ui-monospace}.reward-card.equipped button{border-color:var(--lime);color:var(--lime)}
+body[data-theme="violet"]{--cyan:#b477ff;--purple:#6f35ff}
+body[data-theme="toxic"]{--cyan:#6fff72;--purple:#b9ff31;--lime:#e8ff4d}
+body[data-theme="crimson"]{--cyan:#ff657d;--purple:#d32657;--pink:#ff356d;--lime:#ffd45b}
+@media(max-width:700px){header{margin:8px 8px 0;padding:0 14px}.hero{margin:10px 8px 0;border-radius:22px}.profile{gap:6px}.profile>#who{display:none}#profileTitle{display:none}.credit-pill{padding:7px 9px}.entry{border-radius:17px}.progress{border-radius:22px}.shop-head{align-items:flex-start}.wallet{min-width:90px;padding:10px}.shop-grid{grid-template-columns:1fr 1fr;gap:9px}.reward-card{padding:15px;border-radius:16px}.reward-card p{min-height:45px}.reward-card>div:last-child{display:block}.reward-card button{width:100%;margin-top:9px}}
+
