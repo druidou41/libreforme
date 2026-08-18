@@ -22,3 +22,6 @@ $$;
 
 grant execute on function public.delete_my_activity(uuid) to authenticated;
 
+-- Force l’API Supabase à détecter immédiatement la nouvelle fonction.
+notify pgrst, 'reload schema';
+
