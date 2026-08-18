@@ -1,0 +1,16 @@
+/* Lisibilité et finition arrondie de la saisie rapide */
+dialog{border-radius:26px;overflow:hidden}
+.flow-modal{color:var(--text);border-radius:24px;overflow:hidden}
+.modalTitle h2{color:var(--cyan);text-shadow:0 0 16px #25f4ff45}
+.modalTitle .back,.modalTitle .close{border-radius:12px}
+.step-block,.quick-block{border-radius:18px;background:linear-gradient(145deg,#0c1428,#080e1c)}
+.stepper b{color:var(--lime);text-shadow:0 0 14px #c8ff3d55}
+.stepper span{color:#b9c8e8}
+.stepper button{border-radius:14px;color:var(--text);background:linear-gradient(145deg,#171f39,#0d1428)}
+.stepper button:active{background:var(--purple);transform:scale(.96)}
+.presets button,.recents>button,.activity-grid button{border-radius:16px}
+.flow-modal details{border-radius:12px}
+.modalActions .primary{border-radius:14px;clip-path:none}
+.modalActions .delete{border-radius:10px}
+@media(max-width:700px){dialog{border-radius:22px}.flow-modal{border-radius:20px}.step-block,.quick-block{border-radius:16px}}
+
